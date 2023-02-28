@@ -1,0 +1,5 @@
+exercises:
+    '01_Algorytmy hashowania danych': { max_points: 0, disabled: true }
+    '02_Ochrona haseł': { max_points: 0, disabled: true }
+    '03_Ochrona danych wrażliwych': { max_points: 0, disabled: true }
+    '04_Ochrona integralności plików': { max_points: 0, disabled: true }

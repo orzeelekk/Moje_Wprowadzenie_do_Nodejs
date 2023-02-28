@@ -1,0 +1,6 @@
+exercises:
+    '01_Strumień odczytu': { max_points: 0, disabled: true }
+    '02_Strumień zapisu': { max_points: 0, disabled: true }
+    '03_Przekazanie strumienia': { max_points: 0, disabled: true }
+    '04_Wydarzenia w strumieniu': { max_points: 0, disabled: true }
+    '05_Compress cli': { max_points: 0, disabled: true }

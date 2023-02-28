@@ -1,0 +1,4 @@
+exercises:
+    '01_Postman serwer HTTP': { max_points: 0, disabled: true }
+    '02_alpha omega': { max_points: 0, disabled: true }
+    '03_Wiele zapytań axios - zadanie dodatkowe': { max_points: 0, disabled: true }
