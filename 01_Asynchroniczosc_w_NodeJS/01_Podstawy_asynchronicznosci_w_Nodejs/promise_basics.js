@@ -48,3 +48,4 @@ async function mojaAsyncFunkcja() {
   }
 }
 mojaAsyncFunkcja();
+//ok
