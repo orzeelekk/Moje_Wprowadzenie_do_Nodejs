@@ -1,0 +1,92 @@
+[
+  {
+    "basename": "file_1",
+    "extname": ".txt",
+    "dirname": "/home/orzelekk/Codersy/TEST/Moje_Wprowadzenie_do_Nodejs/03_fs_API_-_podsumowanie/01_stats_i_path/dir_one",
+    "size": 35,
+    "birthtime": "2023-03-01T12:26:41.349Z",
+    "isFile": true,
+    "isDirectory": false
+  },
+  {
+    "basename": "file_10",
+    "extname": ".txt",
+    "dirname": "/home/orzelekk/Codersy/TEST/Moje_Wprowadzenie_do_Nodejs/03_fs_API_-_podsumowanie/01_stats_i_path/dir_one",
+    "size": 35,
+    "birthtime": "2023-03-01T12:26:41.353Z",
+    "isFile": true,
+    "isDirectory": false
+  },
+  {
+    "basename": "file_2",
+    "extname": ".txt",
+    "dirname": "/home/orzelekk/Codersy/TEST/Moje_Wprowadzenie_do_Nodejs/03_fs_API_-_podsumowanie/01_stats_i_path/dir_one",
+    "size": 35,
+    "birthtime": "2023-03-01T12:26:41.353Z",
+    "isFile": true,
+    "isDirectory": false
+  },
+  {
+    "basename": "file_3",
+    "extname": ".txt",
+    "dirname": "/home/orzelekk/Codersy/TEST/Moje_Wprowadzenie_do_Nodejs/03_fs_API_-_podsumowanie/01_stats_i_path/dir_one",
+    "size": 34,
+    "birthtime": "2023-03-01T12:26:41.353Z",
+    "isFile": true,
+    "isDirectory": false
+  },
+  {
+    "basename": "file_4",
+    "extname": ".txt",
+    "dirname": "/home/orzelekk/Codersy/TEST/Moje_Wprowadzenie_do_Nodejs/03_fs_API_-_podsumowanie/01_stats_i_path/dir_one",
+    "size": 34,
+    "birthtime": "2023-03-01T12:26:41.353Z",
+    "isFile": true,
+    "isDirectory": false
+  },
+  {
+    "basename": "file_5",
+    "extname": ".txt",
+    "dirname": "/home/orzelekk/Codersy/TEST/Moje_Wprowadzenie_do_Nodejs/03_fs_API_-_podsumowanie/01_stats_i_path/dir_one",
+    "size": 35,
+    "birthtime": "2023-03-01T12:26:41.353Z",
+    "isFile": true,
+    "isDirectory": false
+  },
+  {
+    "basename": "file_6",
+    "extname": ".txt",
+    "dirname": "/home/orzelekk/Codersy/TEST/Moje_Wprowadzenie_do_Nodejs/03_fs_API_-_podsumowanie/01_stats_i_path/dir_one",
+    "size": 35,
+    "birthtime": "2023-03-01T12:26:41.353Z",
+    "isFile": true,
+    "isDirectory": false
+  },
+  {
+    "basename": "file_7",
+    "extname": ".txt",
+    "dirname": "/home/orzelekk/Codersy/TEST/Moje_Wprowadzenie_do_Nodejs/03_fs_API_-_podsumowanie/01_stats_i_path/dir_one",
+    "size": 35,
+    "birthtime": "2023-03-01T12:26:41.353Z",
+    "isFile": true,
+    "isDirectory": false
+  },
+  {
+    "basename": "file_8",
+    "extname": ".txt",
+    "dirname": "/home/orzelekk/Codersy/TEST/Moje_Wprowadzenie_do_Nodejs/03_fs_API_-_podsumowanie/01_stats_i_path/dir_one",
+    "size": 35,
+    "birthtime": "2023-03-01T12:26:41.353Z",
+    "isFile": true,
+    "isDirectory": false
+  },
+  {
+    "basename": "file_9",
+    "extname": ".txt",
+    "dirname": "/home/orzelekk/Codersy/TEST/Moje_Wprowadzenie_do_Nodejs/03_fs_API_-_podsumowanie/01_stats_i_path/dir_one",
+    "size": 35,
+    "birthtime": "2023-03-01T12:26:41.353Z",
+    "isFile": true,
+    "isDirectory": false
+  }
+]
