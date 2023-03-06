@@ -15,7 +15,11 @@ async function promiseNone(arg) {
     });
 }
 
-promiseNone([Promise.reject(), Promise.reject(), Promise.resolve()])
+promiseNone([
+    Promise.reject(),
+    Promise.reject(),
+    Promise.resolve()
+])
     .then((res) => {
         console.log("All failed :)", res);
     })
