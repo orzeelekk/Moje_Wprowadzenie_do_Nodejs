@@ -4,19 +4,25 @@ class Timer extends EventEmitter {
     elapsed = 0;
     started = false;
     paused = false;
+    //_setupInterval jest ogolny 1 sec odwolanie do elapsed i po nim poszczegolne stany
     _setupInterval() {
         return setInterval(() => {
             if (this.elapsed % 2 === 0) {
                 this.emit('tick', ++this.elapsed);
+                //i z callbacka bd num
             } else {
                 this.emit('tock', ++this.elapsed);
             }
+            //oddzielenie 1 * 1000 symboliczne aby widziec ile sec nadajemy
         }, 1 * 1000);
     }
+
     start() {
+        //jezeli this.started = false
         if (!this.started) {
             this.emit('start');
             this.started = true;
+            // generuje sie osobny this.interval i na nim bd robic operowac
             this.interval = this._setupInterval();
         }
     }
@@ -25,14 +31,17 @@ class Timer extends EventEmitter {
         if (this.started && !this.paused) {
             clearInterval(this.interval);
             this.paused = true;
+            console.log('*********************PAUSED*********************');
         }
     }
 
     resume() {
         if (this.started && this.paused) {
+            //podlapanie pod ten konkretny interwał!
             this.interval = this.interval = this._setupInterval();
         }
         this.paused = false;
+        console.log('*********************RESUMED*********************');
     }
 
     stop() {
@@ -45,9 +54,11 @@ class Timer extends EventEmitter {
     }
 }
 
+
 const timer = new Timer();
 
 timer.on('tick', (num) => {
+    //z nasluchu na 'ticka' console logujemy
     console.log('I say TICK', num);
 });
 
@@ -56,12 +67,13 @@ timer.on('tock', (num) => {
 });
 timer.on('start', () => {
     console.log('*********************STARTED*********************');
+
 });
 timer.on('stop', () => {
     console.log('*********************STOPPED*********************');
 });
 
-timer.start();
+// timer.start();
 timer.start(); // A
 
 setTimeout(() => {
@@ -70,8 +82,10 @@ setTimeout(() => {
 
 setTimeout(() => {
     timer.resume();
-}, 10 * 1000);
+}, 6 * 1000);
 
 setTimeout(() => {
     timer.stop();
 }, 12 * 1000);
+
+
