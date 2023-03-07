@@ -31,8 +31,57 @@ const listOfJokes = [
   'What kind of tree fits in your hand? - A palm tree!',
 ];
 
-async function flow() {
-  while (true) {}
-}
+const EVENT_NAMES = {
+  date: "DATE",
+  exit: "EXIT",
+  flatter: "FLATTER",
+  joke: "JOKE",
+};
 
+const emitter = new EventEmitter();
+
+emitter.on(EVENT_NAMES.date, () => {
+  console.log(new Date());
+});
+emitter.on(EVENT_NAMES.exit, () => {
+  console.log('Bye bye')
+  process.exit()
+})
+emitter.on(EVENT_NAMES.flatter, () => {
+  const item =
+      listOfCompliments[Math.floor(Math.random() * listOfCompliments.length)];
+  console.log(item)
+})
+emitter.on(EVENT_NAMES.joke, () => {
+  const item =
+      listOfJokes[Math.floor(Math.random() * listOfJokes.length)];
+  console.log(item)
+})
+async function flow() {
+  while (true) {
+    const {selected} = await prompt([
+      {
+        type: 'list',
+        name: 'selected',
+        message: 'Lest do something',
+        choices: activity
+      }
+    ]);
+
+    switch (selected) {
+      case activity[0]:
+      emitter.emit(EVENT_NAMES.date);
+      break;
+      case activity[3]:
+      emitter.emit(EVENT_NAMES.exit);
+      break;
+      case activity[2]:
+      emitter.emit(EVENT_NAMES.flatter);
+      break;
+      case activity[1]:
+      emitter.emit(EVENT_NAMES.joke);
+      break;
+    }
+  }
+}
 flow();
