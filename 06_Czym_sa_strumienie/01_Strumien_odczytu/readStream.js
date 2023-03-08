@@ -10,9 +10,8 @@ const readStream = fs.createReadStream(source);
 let count = 0
 
 readStream.on('data', (data) => {
-    count ++
-
-    // console.log(data)
+    count++
+    console.log(data)
 })
 
 readStream.on('close', () => {
