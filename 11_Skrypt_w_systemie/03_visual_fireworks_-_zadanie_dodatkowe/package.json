@@ -6,6 +6,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bin": {
+    "visual-fireworks": "./main.js"
+  },
   "dependencies": {
     "chalk": "^3.0.0",
     "clui": "^0.3.6",
