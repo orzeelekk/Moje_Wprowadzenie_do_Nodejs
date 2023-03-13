@@ -21,3 +21,4 @@ module.exports.displayStats = async () => {
         console.log(gauge)
     })
 }
+//uruchamiany przez "visual-fireworks s" a potem zmiane pliku stats.
