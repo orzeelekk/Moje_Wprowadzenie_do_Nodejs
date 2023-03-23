@@ -3,6 +3,8 @@ const fs = require('fs');
 //1. Sprawdzamy po bin nazwe skryptu (process.argv)
 //2. Wpisujemy gdziekolwiek chcemy przez terminal -> pawel_skrypcik text.txt (text.txt to [2])
 
+// gdzie to mam wpisywać? - chmod +x ./cli.js
+
 const fileName = process.argv[2];
 console.log(process.argv)
 // 0 to interpreter 1 to sciezka do skryptu a 2 to juz dane wprowadzane z linii polecenia
